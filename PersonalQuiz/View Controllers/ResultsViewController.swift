@@ -17,7 +17,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var answerTitleLabel: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     
-    var answers: [Answer]! = []
+    var answers: [Answer]! 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class ResultsViewController: UIViewController {
                                                         .rabbit: 0,
                                                         .turtle: 0]
         for answer in answers {
-           animalTypesDictionary[answer.type]! += 1 
+           animalTypesDictionary[answer.type]! += 1
         }
         
         guard let resultAnimalType = animalTypesDictionary
