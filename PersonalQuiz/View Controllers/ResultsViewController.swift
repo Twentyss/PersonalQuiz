@@ -21,8 +21,8 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.hidesBackButton = true
-
         calculateResult()
     }
     
@@ -32,7 +32,7 @@ class ResultsViewController: UIViewController {
                                                         .rabbit: 0,
                                                         .turtle: 0]
         for answer in answers {
-            animalTypesDictionary[answer.type]! += 1
+           animalTypesDictionary[answer.type]! += 1 
         }
         
         guard let resultAnimalType = animalTypesDictionary
